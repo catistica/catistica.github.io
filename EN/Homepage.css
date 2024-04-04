@@ -1,3 +1,8 @@
+@font-face{
+    font-family: Ogg;
+    src:'/EN/font/Staatliches-Regular.ttf';
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +24,7 @@ body{
 }
 
 h1 {
-    font-family: Staatliches, sans-serif;
+    font-family: "Staatliches", sans-serif;
     font-weight: lighter;
     font-style: normal;
     font-size: 9rem;
@@ -183,7 +188,7 @@ h4 {
     align-content: center;
     font-family: Staatliches, sans-serif;
     color: #ffffff;
-    font-size: 6rem;
+    font-size: 6em;
     line-height: 90%;
     
 }
