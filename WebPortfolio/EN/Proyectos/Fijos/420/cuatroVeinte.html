@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>catistica</title>
+        <link rel="stylesheet" href="/EN/Proyectos/Fijos/fijos.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Koulen&display=swap');
+            @font-face{
+                font-family: Staatliches;
+                src:"font/font/Staatliches-Regular.ttf";
+            }
+            </style>
+        
+    
+    </head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="/index.html" class="logo">  
+            <img src="/img/imgHome/Logo.png" alt="">
+        </a>
+        <!-- Menú -->
+        <nav class="menu" id="sidemenu"> 
+            <a href="/index.html" >HOME</a>
+            <a href="/index.html#transition">Work</a>
+            <a href="/index.html#aboutme">About Me</a>
+            <a href="/index.html#contact">Contact</a>
+            <a href="/ES/Proyectos/Fijos/420/cuatroVeinte.html" id="language">ES</a>
+            <a href="#home" id="language" class="active">EN</a>
+
+            <i class='bx bx-chevron-right' id="hamburguesa" onclick="closemenu()"></i>
+        </nav>
+
+        <i class='bx bx-menu' id="hamburguesa" onclick="openmenu()"></i>
+        
+    </header>
+
+    <button onclick="history.back()" class="flecha"> 
+       <i class='bx bx-arrow-back'></i>
+    </button>
+
+    <div class="flecha" onclick="history.back()">
+    </div>
+
+    <section class="cuerpo">
+        <div class="imagen">
+            <img src="/EN/Proyectos/Fijos/420/img/IMG_1511.jpg" alt="">
+        </div>
+
+        <div class="texto">
+            
+            <div class="tags">
+                <h3 id="illustration">ILLUSTRATION AND GRAPHIC</h3>
+            </div>
+
+            <h1>420</h1>
+            
+            <p> This illustration was made for Planteorama, an illustration section of the digital media El Planteo. The idea was to represent cannabis culture in a surreal and psychodelic way, using intertwining shapes and happy colors. </p>
+            <p>This illustration can also be found on the following <a href="https://www.forbes.com/sites/javierhasse/2023/03/02/smoke-signals-and-artistic-visions-13-latin-american-weed-inspired-illustrators-you-need-to-know/?sh=7874daaf7724" target="_blank">Forbes article!</a></p>
+
+            <a class="btn3" target="_blank" href="https://www.instagram.com/p/C3yDU23OwNo/?igsh=MW40b3R5ZG13Mndpdw==">SEE THE ILLUSTRATION HERE</a>
+        </div>
+        
+    </section>
+
+
+    <footer class="footer">
+        <h2>2024 | Catalina Pastorino</h2>
+       </footer>
+
+    <script src="/EN/slider.js"></script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-150px";
+        }
+    
+       </script>
+    
+</body>
+</html>

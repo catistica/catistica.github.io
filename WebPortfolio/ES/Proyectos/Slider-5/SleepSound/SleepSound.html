@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>catistica</title>
+        <link rel="stylesheet" href="/EN/Proyectos/Slider-5/slider-5-w.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Koulen&display=swap');
+            @font-face{
+                font-family: Staatliches;
+                src:"font/font/Staatliches-Regular.ttf";
+            }
+            </style>
+        
+    
+    </head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <a href="/ES/HomepageSP.html" class="logo">  
+        <img src="/img/imgHome/Logo.png" alt="">
+    </a>
+    <!-- Menú -->
+    
+
+    <nav class="menu" id="sidemenu"> 
+        <a href="/ES/HomepageSP.html" >HOME</a>
+        <a href="/ES/HomepageSP.html#transition">Trabajo</a>
+        <a href="/ES/HomepageSP.html#aboutme">Sobre mí</a>
+        <a href="/ES/HomepageSP.html#contact">Contacto</a>
+        <a href="#home" id="language"class="active">ES</a>
+        <a href="/EN/Proyectos/Slider-5/SleepSound/SleepSound.html" id="language" >EN</a>
+
+        <i class='bx bx-chevron-right' id="hamburguesa" onclick="closemenu()"></i>
+    </nav>
+
+    <i class='bx bx-menu' id="hamburguesa" onclick="openmenu()"></i>
+    
+    
+</header>
+
+    <button onclick="history.back()" class="flecha"> 
+       <i class='bx bx-arrow-back'></i>
+    </button>
+
+    <div class="flecha" onclick="history.back()">
+    </div>
+
+    <section class="cuerpo">
+
+        <div class="container">
+            <div class="carousel">
+                <div class="slider">
+                    <section>
+                        <img src="/EN/Proyectos/Slider-5/SleepSound/img/Captura de Pantalla 2024-01-29 a la(s) 10.15.57.png" alt="">
+                    </section>
+                    <section><img src="/EN/Proyectos/Slider-5/SleepSound/img/Captura de Pantalla 2024-01-29 a la(s) 10.16.41.png" alt=""></section>
+                    <section>
+                        <img src="/EN/Proyectos/Slider-5/SleepSound/img/Captura de Pantalla 2024-01-29 a la(s) 10.17.38.png" alt=""></section>
+                    <section><img src="/EN/Proyectos/Slider-5/SleepSound/img/Captura de Pantalla 2024-01-29 a la(s) 10.18.05.png" alt=""></section>
+                    <section><img src="/EN/Proyectos/Slider-5/SleepSound/img/Captura de Pantalla 2024-01-29 a la(s) 10.34.26.png" alt=""></section>
+                </div>
+                <div class="controls">
+                    <span class="arrow prev"><i class='bx bx-chevron-left' ></i></span>
+                    <span class="arrow next"><i class='bx bx-chevron-right'></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="texto">
+            
+            <div class="tags">
+                <h3 id="animation">VIDEO Y ANIMACIÓN</h3>
+            </div>
+
+            <h1>SLEEP SOUND VISUALS</h1>
+            
+            <p>Este proyecto fue una breve práctica universitaria en donde tuvimos que hacer visuales para la canción asignada "Sleep Sound" de JamieXX. A través del análisis de la canción, y la experimentación con visuales generativas, el producto final fue una presentación en vivo de estas visuales.</p>
+
+            <a class="btn3" target="_blank" href="https://youtube.com/playlist?list=PLjzkf1tARwwsBDLHQoDXYWlti7fkmuzU9&si=Y3Co31p8uw1V7Qjc">Mirá el proyecto acá</a>
+        </div>
+        
+    </section>
+
+
+    <footer class="footer">
+        <h2>2024 | Catalina Pastorino</h2>
+       </footer>
+
+    <script src="/EN/Proyectos/Slider-5/slider-5.js"></script>
+    
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-150px";
+        }
+    
+       </script>
+       
+</body>
+</html>

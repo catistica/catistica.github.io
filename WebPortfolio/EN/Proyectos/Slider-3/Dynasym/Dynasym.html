@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>catistica</title>
+        <link rel="stylesheet" href="/EN/Proyectos/Slider-3/slider-3.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Koulen&display=swap');
+            @font-face{
+                font-family: Staatliches;
+                src:"font/font/Staatliches-Regular.ttf";
+            }
+            </style>
+        
+    
+    </head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="/index.html" class="logo">  
+            <img src="/img/imgHome/Logo.png" alt="">
+        </a>
+        <!-- Menú -->
+        <nav class="menu" id="sidemenu"> 
+            <a href="/index.html" >HOME</a>
+            <a href="/index.html#transition">Work</a>
+            <a href="/index.html#aboutme">About Me</a>
+            <a href="/index.html#contact">Contact</a>
+            <a href="/ES/Proyectos/Slider-3/Dynasym/Dynasym.html" id="language">ES</a>
+            <a href="#home" id="language" class="active">EN</a>
+
+            <i class='bx bx-chevron-right' id="hamburguesa" onclick="closemenu()"></i>
+        </nav>
+
+        <i class='bx bx-menu' id="hamburguesa" onclick="openmenu()"></i>
+        
+    </header>
+
+    <button onclick="history.back()" class="flecha"> 
+       <i class='bx bx-arrow-back'></i>
+    </button>
+
+    <div class="flecha" onclick="history.back()">
+    </div>
+
+    <section class="cuerpo">
+
+        <div class="container">
+            <div class="carousel">
+                <div class="slider">
+                    <section><img src="/EN/Proyectos/Slider-3/Dynasym/img/Dynasym.gif" alt=""></section>
+                    <section>
+                        <img src="/EN/Proyectos/Slider-3/Dynasym/img/Dynasym_Mesa de trabajo 1 copia.jpg" alt=""></section>
+                    <section>
+                        <img src="/EN/Proyectos/Slider-3/Dynasym/img/Dynasym_Mesa de trabajo 1 copia 2.jpg" alt="">
+                    </section>
+                </div>
+                <div class="controls">
+                    <span class="arrow prev"><i class='bx bx-chevron-left' ></i></span>
+                    <span class="arrow next"><i class='bx bx-chevron-right'></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="texto">
+            
+            <div class="tags">
+                <h3 id="space">3D AND SPACE</h3>
+            </div>
+
+            <h1>Dynasym</h1>
+            
+            <p>For this university project, we had to redesign an assigned object with the aesthetic of a certain designer.</p>
+            <p>In my case, this pop coffee maker takes its aesthetic from designer Karim Rashid. The concepts revolves around the idea of dynamic asymmetry, where the main characters are the unique curves and vibrant colors.</p>
+
+            <a class="btn3" href="https://www.instagram.com/p/C5JA2tPrl9B/?igsh=MWUyeHN6N2Z3cGJtcw==" target="_blank">SEE THE FULL PROYECT HERE</a>
+        </div>
+        
+    </section>
+
+
+    <footer class="footer">
+        <h2>2024 | Catalina Pastorino</h2>
+       </footer>
+
+    <script src="/EN/Proyectos/Slider-3/slider-3.js"></script>
+    
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-150px";
+        }
+    
+       </script>
+       
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>catistica</title>
+        <link rel="stylesheet" href="/EN/Proyectos/Slider-5/slider-5-w.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Koulen&display=swap');
+            @font-face{
+                font-family: Staatliches;
+                src:"font/font/Staatliches-Regular.ttf";
+            }
+            </style>
+        
+    
+    </head>
+<body>
+
+    <!-- HEADER -->
+<header class="header">
+    <a href="/ES/HomepageSP.html" class="logo">  
+        <img src="/img/imgHome/Logo.png" alt="">
+    </a>
+    <!-- Menú -->
+    
+
+    <nav class="menu" id="sidemenu"> 
+        <a href="/ES/HomepageSP.html" >HOME</a>
+        <a href="/ES/HomepageSP.html#transition">Trabajo</a>
+        <a href="/ES/HomepageSP.html#aboutme">Sobre mí</a>
+        <a href="/ES/HomepageSP.html#contact">Contacto</a>
+        <a href="#home" id="language"class="active">ES</a>
+        <a href="/EN/Proyectos/Slider-5/MitiMiti/MitiMiti.html" id="language" >EN</a>
+
+        <i class='bx bx-chevron-right' id="hamburguesa" onclick="closemenu()"></i>
+    </nav>
+
+    <i class='bx bx-menu' id="hamburguesa" onclick="openmenu()"></i>
+    
+    
+</header>
+
+    <button onclick="history.back()" class="flecha"> 
+       <i class='bx bx-arrow-back'></i>
+    </button>
+
+    <div class="flecha" onclick="history.back()">
+    </div>
+
+    <section class="cuerpo">
+
+        <div class="container">
+            <div class="carousel">
+                <div class="slider">
+                    <section>
+                        <img src="/EN/Proyectos/Slider-5/MitiMiti/img/DSC00044.JPG" alt="">
+                    </section>
+                    <section><img src="/EN/Proyectos/Slider-5/MitiMiti/img/DSC00065.JPG" alt=""></section>
+                    <section>
+                        <img src="/EN/Proyectos/Slider-5/MitiMiti/img/DSC00066.JPG" alt=""></section>
+                    <section><img src="/EN/Proyectos/Slider-5/MitiMiti/img/DSC00072.JPG" alt=""></section>
+                    <section><img src="/EN/Proyectos/Slider-5/MitiMiti/img/DSC00084.JPG" alt=""></section>
+                </div>
+                <div class="controls">
+                    <span class="arrow prev"><i class='bx bx-chevron-left' ></i></span>
+                    <span class="arrow next"><i class='bx bx-chevron-right'></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="texto">
+            
+            <div class="tags">
+                <h3 id="animation">VIDEO Y ANIMACIÓN</h3>
+                <h3 id="space">3D Y ESPACIO</h3>
+                <h3 id="interactive">INTERACTIVO</h3>
+            </div>
+
+            <h1>Miti Miti</h1>
+
+            <p>In collaboration with IAN COSANO CATTANEO, VALENTINO DATO and LUCÍA BELÉN ROVASIO AGUIRRE.</p>
+            <p><i>Miti Miti</i> es un proyecto de mapping 3D. Explica a través de una sala interactiva el proyecto de Quinta Monroy del estudio ELEMENTAL, un proyecto urbano que fue diseñado para este barrio chileno que ofrece una forma innovadora de pensar los problemas de las viviendas sociales.</p>
+            <a class="btn3" target="_blank" href="https://drive.google.com/drive/folders/1w5YeAjd39ybJ6yZHlvb8tJol9LA2JJyS?usp=sharing">Mirá el proyecto acá</a>
+        </div>
+        
+    </section>
+
+
+    <footer class="footer">
+        <h2>2024 | Catalina Pastorino</h2>
+       </footer>
+
+    <script src="/EN/Proyectos/Slider-5/slider-5.js"></script>
+    
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-150px";
+        }
+    
+       </script>
+       
+</body>
+</html>

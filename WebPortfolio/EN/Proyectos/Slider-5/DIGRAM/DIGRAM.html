@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>catistica</title>
+        <link rel="stylesheet" href="/EN/Proyectos/Slider-5/slider-5-h.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Koulen&display=swap');
+            @font-face{
+                font-family: Staatliches;
+                src:"font/font/Staatliches-Regular.ttf";
+            }
+            </style>
+        
+    
+    </head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="/index.html" class="logo">  
+            <img src="/img/imgHome/Logo.png" alt="">
+        </a>
+        <!-- Menú -->
+        <nav class="menu" id="sidemenu"> 
+            <a href="/index.html" >HOME</a>
+            <a href="/index.html#transition">Work</a>
+            <a href="/index.html#aboutme">About Me</a>
+            <a href="/index.html#contact">Contact</a>
+            <a href="/ES/Proyectos/Slider-5/DIGRAM/DIGRAM.html" id="language">ES</a>
+            <a href="#home" id="language" class="active">EN</a>
+
+            <i class='bx bx-chevron-right' id="hamburguesa" onclick="closemenu()"></i>
+        </nav>
+
+        <i class='bx bx-menu' id="hamburguesa" onclick="openmenu()"></i>
+        
+    </header>
+
+    <button onclick="history.back()" class="flecha"> 
+       <i class='bx bx-arrow-back'></i>
+    </button>
+
+    <div class="flecha" onclick="history.back()">
+    </div>
+
+    <section class="cuerpo">
+
+        <div class="container">
+            <div class="carousel">
+                <div class="slider">
+                    <section>
+                        <img src="/EN/Proyectos/Slider-5/DIGRAM/img/DiGram-1.png" alt="">
+                    </section>
+                    <section>
+                        <img src="/EN/Proyectos/Slider-5/DIGRAM/img/DiGram-4.png" alt=""></section>
+                    <section><img src="/EN/Proyectos/Slider-5/DIGRAM/img/DiGram-2.png" alt=""></section>
+                    <section><img src="/EN/Proyectos/Slider-5/DIGRAM/img/DiGram-3.png" alt=""></section>
+                    <section><img src="/EN/Proyectos/Slider-5/DIGRAM/img/DiGram-5.png" alt=""></section>
+                </div>
+                <div class="controls">
+                    <span class="arrow prev"><i class='bx bx-chevron-left' ></i></span>
+                    <span class="arrow next"><i class='bx bx-chevron-right'></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="texto">
+            
+            <div class="tags">
+                <h3 id="interactive">INTERACTIVE</h3>
+                <h3 id="illustration">ILLUSTRATION AND GRAPHIC</h3>
+            </div>
+
+            <h1>DiGram</h1>
+            
+            <p>DiGram is a university project of color and morphology exploration. This game consists in the combination and recombination of modules to create varied composition.</p>
+            <p>This project is inspired in the chinese tangram, and you can <a href="https://sites.google.com/goethealumni.net/digram-pastorino/pagina" target="_blank">play it over here!</a></p>
+
+            <a class="btn3" href="https://www.behance.net/gallery/161075809/DiGram" target="_blank">SEE THE FULL PORJECT HERE</a>
+        </div>
+        
+    </section>
+
+
+    <footer class="footer">
+        <h2>2024 | Catalina Pastorino</h2>
+       </footer>
+
+    <script src="/EN/Proyectos/Slider-5/slider-5.js"></script>
+    
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-150px";
+        }
+    
+       </script>
+</body>
+</html>

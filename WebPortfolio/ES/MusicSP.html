@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>catistica</title>
+        <link rel="stylesheet" href="style02.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Koulen&display=swap');
+            @font-face{
+                font-family: Staatliches;
+                src:"font/font/Staatliches-Regular.ttf";
+            }
+            </style>
+        
+    
+    </head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="/ES/HomepageSP.html" class="logo">  
+            <img src="/img/imgHome/Logo.png" alt="">
+        </a>
+        <!-- Menú -->
+        
+
+        <nav class="menu" id="sidemenu"> 
+            <a href="/ES/HomepageSP.html" >HOME</a>
+            <a href="/ES/HomepageSP.html#transition">Trabajo</a>
+            <a href="/ES/HomepageSP.html#aboutme">Sobre mí</a>
+            <a href="#contact">Contacto</a>
+            <a href="#home" id="language"class="active">ES</a>
+            <a href="/EN/Music.html" id="language" >EN</a>
+
+            <i class='bx bx-chevron-right' id="hamburguesa" onclick="closemenu()"></i>
+        </nav>
+
+        <i class='bx bx-menu' id="hamburguesa" onclick="openmenu()"></i>
+        
+        
+    </header>
+
+    <button onclick="history.back()" class="flecha"> 
+        <i class='bx bx-arrow-back'></i>
+    </button>
+ 
+    <div class="flecha" onclick="history.back()">
+    </div>
+
+    <section class="Titulos" id="Music">
+        <h1>Música y Sonido</h1>
+        <div class="text">
+            <p>PROGRAMAS Y TÉCNICAS USADAS</p>
+            <div class="etiquetas">
+                <div class="tag">ABLETON LIVE</div>
+                <div class="tag">REAPER</div>
+                <div class="tag">MUSIC COMPOSITION</div>
+                
+        </div>
+        
+    </section>
+
+    <section class="cuerpo">
+        <div class="proyectos">
+            
+            <!-- PROYECTOS -->
+
+            <a href="/ES/Proyectos/Slider-5/Astrolandia/Astrolandia.html" class="boxes" id="Astrolandia">
+                <div class="text">ASTROLANDIA</div>
+                <div class="bajada">2022</div>
+            </a>
+            <a href="/ES/Proyectos/Fijos/BrightNewDay/BrightNewDay.html" class="boxes" id="BrightNewDay">
+                <div class="text">A Bright <br>New Day</div>
+                <div class="bajada">2021</div>
+            </a>
+            <a href="/ES/Proyectos/Slider-5/LabRuido/LabRuido.html" class="boxes" id="LabRuido">
+                <div class="text">Laboratorio del Ruido</div>
+                <div class="bajada">2023</div>
+            </a>
+            <a href="/ES/Proyectos/Fijos/PadPod/PadPod.html" class="boxes" id="PADPOD">
+                <div class="text">PAD POD</div>
+                <div class="bajada">2021</div>
+            </a>
+            <a href="/ES/Proyectos/Fijos/OnALoop/OnALoop.html" class="boxes" id="OnALoop">
+                <div class="text">On a loop</div>
+                <div class="bajada">2021</div>
+            </a>
+            <a href="/ES/Proyectos/Fijos/WorldTravel/WorldTravel.html" class="boxes" id="WorldTravel">
+                <div class="text">World Travel</div>
+                <div class="bajada">2021</div>
+            </a>
+
+
+            <!-- PROYECTOS -->
+            
+            <!-- <div id="empty" class="boxes"></div> -->
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <div class="contact-content">
+            <h1>¡SIGAMOS EN CONTACTO!</h1>
+            <p>¿Trabajamos juntos? Dejame un mensaje <br>o seguime en las redes sociales! <br> </p>
+            <div class="mail">
+                <h5>INFORMACIÓN DE CONTACTO:</h5>
+                <a class="btn2"><i class='bx bx-envelope' ></i> catu.pastorino@gmail.com</a>
+                <a class="btn2"><i class='bx bx-phone' ></i> +54 911 5771 4048</a>
+            </div>
+        
+            <!-- ICONOS SOCIALES -->
+            <div class="socialicons">
+                <h5>REDES SOCIALES:</h5>
+                <a target="_blank" href="https://www.instagram.com/catistica?igsh=MTk2MjNpanAxbGFxdQ%3D%3D&utm_source=qr"><i class='bx bxl-instagram' ></i></a>
+                <a target="_blank" href="https://www.behance.net/catalinpastori1"><i class='bx bxl-behance' ></i></a>
+                <a target="_blank" href="https://www.youtube.com/@catistica"><i class='bx bxl-youtube' ></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/catalina-pastorino-9a1903190/"><i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+    
+        </div>
+    
+        <div class="contact-form">
+            <form action="https://formsubmit.co/naminu.studio@gmail.com" method="POST">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Nombre">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="subject" name="subject" placeholder="Asunto">
+                    <textarea name="Message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Send Message" class="btn3">
+                </div> 
+            </form>
+    
+        </div>
+        
+        
+       </section>
+
+    <footer class="footer">
+        <h2>2024 | Catalina Pastorino</h2>   
+       </footer>
+
+       <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-150px";
+        }
+    
+       </script>
+    
+</body>
+</html>

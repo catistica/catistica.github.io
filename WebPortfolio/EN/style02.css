@@ -1,0 +1,1195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Epilogue", sans-serif;
+}
+
+html {
+    font-size: 62%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #ffffff;
+    color: #000000;
+    background-size: cover;
+}
+
+h1 {
+    font-family: Staatliches, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 9rem;
+    line-height: 90%;
+    color: #ffffff;
+    
+}
+
+p {
+    padding-top: 1em;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.8rem;
+    color: #ffffff;
+    line-height: 120%;
+}
+
+h4 {
+    font-family: Staatliches, sans-serif;
+    font-style: normal;
+    font-size: 6rem;
+    line-height: 90%;
+    color: #ffffff; }
+
+    .header{
+        position:fixed; /*PONERLO EN FIXED*/
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 2rem 3%;
+        background: #000;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    
+    .logo img{
+        width: 10rem;
+        cursor: pointer;
+    }
+    
+    .menu a{
+        font-family: Staatliches, sans-serif;
+        font-size: 2rem;
+        color: #ffffff;
+        margin-left: 4rem;
+        font-weight: 100;
+        transition: 0.3s ease;
+        border-bottom: 3px;
+    }
+    
+    .menu a:hover, 
+    .menu a.active{
+        color: #FF656E;
+    }
+    
+    #hamburguesa {
+        font-size: 3.6rem;
+        color: #ffffff;
+        display: none;
+    
+    }
+    
+    #language{
+        font-family: Epilogue, sans-serif;
+        font-size: 1.7rem;
+        font-weight: 200;
+    }
+
+/*CUERPO*/
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.flecha {
+    position: absolute;
+    margin: 7rem 5rem;
+}
+
+.flecha i{
+    display: flex;
+    color: #fff;
+    border-radius: 50%;
+    background-color: transparent;
+    border:1.5px solid #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+    font-size: 3rem;
+    transition: 0.2s ease;
+}
+.flecha i:hover{
+    background-color: #000;
+}
+
+.Titulos{
+    padding: 7rem 0 0 0;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Titulos h1{
+    display: flex;
+    justify-content: center;
+}
+
+.Titulos .text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    
+}
+
+.Titulos .text p{
+    display: flex;
+    justify-content: center;
+}
+
+
+.etiquetas {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.tag{
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0.6rem;
+    margin: 2px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    border: 1px solid #FFF;
+}
+
+.tagBlack{
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0.6rem;
+    margin: 2px;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 400;
+    border: 1px solid #000;
+}
+
+.Titulos p{
+    display: flex;
+    margin: 2px;
+    padding-top: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#FromAtoZ{
+    background: linear-gradient(90deg, #FF656E, #FF7715 , #B7D01F, #BA9AF0);
+}
+#FromAtoZ h1, #FromAtoZ p{
+    color: #000;
+}
+
+#Illustration{
+    background: #FF656E
+}
+
+#Animation{
+    background: #FCC729
+}
+
+#Space{
+    background: #B7D01F
+}
+
+#Interactive{
+    background: #FF7715
+}
+
+#Music{
+    background: #BA9AF0
+}
+
+.proyectos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #B7D01F;
+}
+
+.boxes{
+    flex: 1 1 25%;
+    height: 40vh;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    justify-content: center;
+    align-content: center;
+    background-color: #ffffff;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.boxes .text{
+    opacity: 0;
+    padding: 1rem;
+    font-family: Staatliches, sans-serif;
+    color: #ffffff;
+    font-size: 6rem;
+    line-height: 90%;
+}
+
+.boxes .bajada{
+    font-family: Epilogue, sans-serif;
+    opacity: 0;
+    color: #ffffff;
+    font-size: 3rem;
+    line-height: 90%;
+    padding-top: 2rem;
+}
+
+.text{ 
+    opacity: 1;
+}
+
+#Astrolandia{ 
+    background-image: url(/img/imgProyectos/Astrolandia.jpg);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Astrolandia .text, #Astrolandia .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Astrolandia:hover{ 
+    background-image: url(/img/imgProyectos/Astrolandia.jpg);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#Astrolandia:hover .text, #Astrolandia:hover .bajada{ 
+    opacity: 1;
+}
+
+#BrightNewDay{ 
+    background-image: url(/img/imgProyectos/Bright\ New\ Day.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#BrightNewDay .text, #BrightNewDay .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#BrightNewDay:hover{ 
+    background-image: url(/img/imgProyectos/Bright\ New\ Day-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#BrightNewDay:hover .text, #BrightNewDay:hover .bajada{ 
+    opacity: 1;
+}
+
+#Contratiempos{ 
+    background-image: url(/img/imgProyectos/Contratiempos.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Contratiempos .text, #Contratiempos .bajada{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Contratiempos:hover{ 
+    background-image: url(/img/imgProyectos/Contratiempos-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#Contratiempos:hover .text, #Contratiempos:hover .bajada{ 
+    opacity: 1;
+}
+
+#CajonesMusicales{ 
+    background-image: url(/img/imgProyectos/Cajones\ Musicales.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#CajonesMusicales .text, #CajonesMusicales .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#CajonesMusicales:hover{ 
+    background-image: url(/img/imgProyectos/Cajones\ Musicales-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#CajonesMusicales:hover .text, #CajonesMusicales:hover .bajada{ 
+    opacity: 1;
+}
+
+#CollagesCanciones{ 
+    background-image: url(/img/imgProyectos/Collages\ de\ Canciones.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#CollagesCanciones .text, #CollagesCanciones .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#CollagesCanciones:hover{ 
+    background-image: url(/img/imgProyectos/Collages\ de\ Canciones-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#CollagesCanciones:hover .text, #CollagesCanciones:hover .bajada{ 
+    opacity: 1;
+}
+
+#Digram{ 
+    background-image: url(/img/imgProyectos/DIGRAM.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Digram .text, #Digram .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Digram:hover{ 
+    background-image: url(/img/imgProyectos/DIGRAM-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#Digram:hover .text, #Digram:hover .bajada{ 
+    opacity: 1;
+}
+
+#Dynasym{ 
+    background-image: url(/img/imgProyectos/Dynasym.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Dynasym .text, #Dynasym .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Dynasym:hover{ 
+    background-image: url(/img/imgProyectos/Dynasym-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#Dynasym:hover .text, #Dynasym:hover .bajada{ 
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+}
+
+#EnUnViaje{ 
+    background-image: url(/img/imgProyectos/En\ un\ Viaje.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#EnUnViaje .text, #EnUnViaje .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#EnUnViaje:hover{ 
+    background-image: url(/img/imgProyectos/En\ un\ Viaje-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#EnUnViaje:hover .text, #EnUnViaje:hover .bajada{ 
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#EsaMusica{ 
+    background-image: url(/img/imgProyectos/esa\ Musica\ q\ no\ entendemos.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#EsaMusica .text, #EsaMusica .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#EsaMusica:hover{ 
+    background-image: url(/img/imgProyectos/esa\ Musica\ q\ no\ entendemos-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#EsaMusica:hover .text, #EsaMusica:hover .bajada{ 
+    opacity: 1;
+}
+
+#Escuadron{ 
+    background-image: url(/img/imgProyectos/Escuadron\ Atrapasueños.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Escuadron .text, #Escuadron .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Escuadron:hover{ 
+    background-image: url(/img/imgProyectos/Escuadron\ Atrapasueños-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#Escuadron:hover .text, #Escuadron:hover .bajada{ 
+    opacity: 1;
+}
+
+#Filala{ 
+    background-image: url(/img/imgProyectos/Filala.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Filala .text, #Filala .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Filala:hover{ 
+    background-image: url(/img/imgProyectos/Filala-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#Filala:hover .text, #Filala:hover .bajada{ 
+    opacity: 1;
+}
+
+#Hermes{ 
+    background-image: url(/img/imgProyectos/Hermés\ Competition.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Hermes .text, #Hermes .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Hermes:hover{ 
+    background-image: url(/img/imgProyectos/Hermés\ Competition-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#Hermes:hover .text, #Hermes:hover .bajada{ 
+    opacity: 1;
+}
+
+#KPOPPosters{ 
+    background-image: url(/img/imgProyectos/KPOP\ Posters.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#KPOPPosters .text, #KPOPPosters .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#KPOPPosters:hover{ 
+    background-image: url(/img/imgProyectos/KPOP\ Posters-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#KPOPPosters:hover .text, #KPOPPosters:hover .bajada{ 
+    opacity: 1;
+}
+
+#LabRuido{ 
+    background-image: url(/img/imgProyectos/Lab\ del\ Ruido.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#LabRuido .text, #LabRuido .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#LabRuido:hover{ 
+    background-image: url(/img/imgProyectos/Lab\ del\ Ruido-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#LabRuido:hover .text, #LabRuido:hover .bajada{ 
+    opacity: 1;
+}
+
+#Laberinto{ 
+    background-image: url(/img/imgProyectos/Laberintos.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Laberinto .text, #Laberinto .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Laberinto:hover{ 
+    background-image: url(/img/imgProyectos/Laberintos-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#Laberinto:hover .text, #Laberinto:hover .bajada{ 
+    opacity: 1;
+}
+
+#MeetUHalfway{ 
+    background-image: url(/img/imgProyectos/Meet\ U\ halfway.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#MeetUHalfway .text, #MeetUHalfway .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#MeetUHalfway:hover{ 
+    background-image: url(/img/imgProyectos/Meet\ U\ halfway-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#MeetUHalfway:hover .text, #MeetUHalfway:hover .bajada{ 
+    opacity: 1;
+}
+
+#MitiMiti{ 
+    background-image: url(/img/imgProyectos/Miti-Miti.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#MitiMiti .text, #MitiMiti .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#MitiMiti:hover{ 
+    background-image: url(/img/imgProyectos/Miti-Miti-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#MitiMiti:hover .text, #MitiMiti:hover .bajada{ 
+    opacity: 1;
+}
+
+#OCExchange{ 
+    background-image: url(/img/imgProyectos/OC\ Exchange.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#OCExchange .text, #OCExchange .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#OCExchange:hover{ 
+    background-image: url(/img/imgProyectos/OC\ Exchange-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#OCExchange:hover .text, #OCExchange:hover .bajada{ 
+    opacity: 1;
+}
+
+#OnALoop{ 
+    background-image: url(/img/imgProyectos/On\ a\ loop.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#OnALoop .text, #OnALoop .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#OnALoop:hover{ 
+    background-image: url(/img/imgProyectos/On\ a\ loop-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#OnALoop:hover .text, #OnALoop:hover .bajada{ 
+    opacity: 1;
+}
+
+#PADPOD{ 
+    background-image: url(/img/imgProyectos/PAD\ POD.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#PADPOD .text, #PADPOD .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#PADPOD:hover{ 
+    background-image: url(/img/imgProyectos/PAD\ POD-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#PADPOD:hover .text, #PADPOD:hover .bajada{ 
+    opacity: 1;
+}
+
+#Ritualia{ 
+    background-image: url(/img/imgProyectos/Ritualia.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Ritualia .text, #Ritualia .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#Ritualia:hover{ 
+    background-image: url(/img/imgProyectos/Ritualia-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#Ritualia:hover .text, #Ritualia:hover .bajada{ 
+    opacity: 1;
+}
+
+#SleepSound{ 
+    background-image: url(/img/imgProyectos/Sleep\ Sound.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#SleepSound .text, #SleepSound .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#SleepSound:hover{ 
+    background-image: url(/img/imgProyectos/Sleep\ Sound-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#SleepSound:hover .text, #SleepSound:hover .bajada{ 
+    opacity: 1;
+}
+
+#TarotDeck{ 
+    background-image: url(/img/imgProyectos/Tarot\ Deck.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#TarotDeck .text, #TarotDeck .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#TarotDeck:hover{ 
+    background-image: url(/img/imgProyectos/Tarot\ Deck-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#TarotDeck:hover .text, #TarotDeck:hover .bajada{ 
+    opacity: 1;
+}
+
+#WorldTravel{ 
+    background-image: url(/img/imgProyectos/World\ Travel.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#WorldTravel .text, #WorldTravel .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#WorldTravel:hover{ 
+    background-image: url(/img/imgProyectos/World\ Travel-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#WorldTravel:hover .text, #WorldTravel:hover .bajada{ 
+    opacity: 1;
+}
+
+#ZodiacStamps{ 
+    background-image: url(/img/imgProyectos/Zodiac\ Stamps.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#ZodiacStamps .text, #ZodiacStamps .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#ZodiacStamps:hover{ 
+    background-image: url(/img/imgProyectos/Zodiac\ Stamps-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#ZodiacStamps:hover .text, #ZodiacStamps:hover .bajada{ 
+    opacity: 1;
+}
+
+#cuatroVeinte{ 
+    background-image: url(/img/imgProyectos/420.png);
+    background-size: 100%;
+    background-position: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#cuatroVeinte .text, #cuatroVeinte .bajada {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+#cuatroVeinte:hover{ 
+    background-image: url(/img/imgProyectos/420-1.png);
+    background-size: 100%;
+    background-color: #000;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#cuatroVeinte:hover .text, #cuatroVeinte:hover .bajada{ 
+    opacity: 1;
+}
+
+#empty {
+    background-color: #B7D01F;
+    border: 3px dashed #ffffff;
+}
+
+/*CONTACT*/
+.contact{
+    background-color: #B7D01F;
+    display:flex;
+    justify-content: center;
+    
+    gap: 10rem;
+    padding: 10rem 9% 10rem;
+}
+.contact-content h1, 
+.contact-content p{
+    color: black;
+    width: 80%;
+}
+
+.contact h5{
+    font-size: 1.3rem;
+}
+
+.contact-content .mail{
+    margin-top: 3rem;
+}
+
+.btn2 {
+    display:inline-block;
+    width: 50%;
+    margin: 1rem 3rem 0 0;
+    color:#000000;
+    font-size: 1.8rem;
+    transition: 0.2s ease;
+    
+}
+
+.socialicons h5{
+    font-size: 1.3rem;
+    margin-top: 3rem;
+}
+
+.socialicons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: transparent;
+    border: 0.2rem solid black;
+    font-size: 4rem;
+    border-radius: 50%;
+    color: black;
+    margin: 1rem 1.5rem 3rem 0;
+}
+
+.socialicons a:hover{
+    color:#B7D01F;
+    background-color: #FFFFFF;
+    border: 0.2rem solid #000000;
+}
+
+.btn3 {
+    align-items: baseline;
+    font-family: "Koulen", sans-serif;
+    display:inline-block;
+    padding: 0 2.8rem;
+    background: #FFFFFF;
+    color:#B7D01F;
+    border: 0.2rem solid black;
+    font-size: 3rem;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.btn3:hover {
+    background-color: #B7D01F;
+    color: #FFFFFF;
+}
+
+.contact-form form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-form form .input-box{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input, 
+.contact-form form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 0.2rem solid black;
+}
+
+.success {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.success h3{
+    background-color: #000000;
+    display: block;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 30px;
+    background-color: #000000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.footer h2, .TOP a{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.TOP i{
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.TOP {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a:hover{
+    font-weight: 600;
+}
+
+/*APARECE MENU DESPLEGABLE*/
+@media only screen and (max-width:900px){
+
+    .header{
+        position:fixed; /*PONERLO EN FIXED*/
+        top: 0;
+        left: 0;
+        width: 100vw;
+        padding: 2rem 3%;
+        background: #000;
+    }
+
+    #hamburguesa{
+        display: block;
+        font-size: 3rem;
+        margin-right: 15px;
+    }
+
+    .menu{
+        background-color: #FF656E;
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top:50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .menu a{
+        display: block;
+        margin: 25px;
+    }
+
+    .menu i{
+        position: absolute;
+        top: 25px;
+        left: 15px;
+        cursor: pointer;
+
+    }
+    .menu a:hover, .menu a.active{
+        color: #000;
+    }
+
+}
+
+
+@media(max-width: 900px){
+
+    .logo img{
+        width: 7rem;
+        margin-left: 15px;
+    }
+
+    .flecha{
+        display: none;
+    } 
+
+    .Titulos{
+        flex-direction: column;
+        padding: 5rem 4rem 0 4rem;
+        gap: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 7rem;
+        
+    }
+
+    .Titulos .text{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .Titulos h1{
+        font-size: 6rem;
+        display: flex;
+        text-align: center;        
+    }
+    .Titulos p{
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    #empty {
+        display: none;
+    }
+
+    .proyectos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        flex-wrap: wrap;
+    }
+
+    .proyectos .boxes{
+        height: 25vh;
+    }
+
+    .boxes .text, .boxes .bajada{
+        font-size: 3rem;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 0;
+        padding: 6rem 9% 2rem;
+        padding-top: 6rem;
+    }
+
+    .contact-content h1, 
+    .contact-content p{
+        width: 100%;
+    }
+
+    .contact-content h1{
+        font-size: 6rem;
+    }
+    .contact-content p{
+        font-size: 1.6rem;
+    }
+
+    .contact-content .mail a{
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .footer h2, .TOP a{
+        font-size: 1.2rem;
+    }
+
+    .TOP i{
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

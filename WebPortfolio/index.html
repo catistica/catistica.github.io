@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catistica</title>
+    <link rel="stylesheet" href="EN/Homepage.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Koulen&display=swap');
+        @font-face{
+                font-family: Staatliches;
+                src:"font/font/Staatliches-Regular.ttf";
+            }
+        @font-face{
+                font-family: Ogg;
+                src:"font/font/Ogg-Italic.otf";
+            }
+        </style> 
+
+</head>
+<body>
+<!-- HEADER -->
+    <header class="header">
+        <a href="#home" class="logo">  
+            <img src="/img/imgHome/Logo.png" alt="">
+        </a>
+        <!-- Menú -->
+        
+
+        <nav class="menu" id="sidemenu"> 
+            <a href="#home" >HOME</a>
+            <a href="#transition">Work</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#contact">Contact</a>
+            <a href="/ES/HomepageSP.html" id="language">ES</a>
+            <a href="#home" id="language" class="active">EN</a>
+
+            <i class='bx bx-chevron-right' id="hamburguesa" onclick="closemenu()"></i>
+        </nav>
+
+        <i class='bx bx-menu' id="hamburguesa" onclick="openmenu()"></i>
+        
+        
+    </header>
+        
+<!-- PORTADA -->
+
+<section class="home" id="home">
+    
+    <div class="homecontent">
+    
+        <h1> ARTIST AND <span>integral*</span> DESIGNER</h1>
+        <p>*Graphic, audiovisual, object, 3D, sound, interactive and immersive designer.</p>
+        
+    </div>
+
+    <!-- IMAGEN DE FONDO -->
+    <div class="image">
+        <img src="/img/imgHome/BlackCat07.png">
+    </div>
+  </section>
+
+  <section class="transition" id="transition">
+    <div class="Scroll">
+        <!-- <h6>¡Go check some of my works!</h6> -->
+        <i class='bx bx-down-arrow-alt' ></i>
+    </div>
+  </section>
+
+  <!-- WORK -->
+    <!-- Seccion transition -->
+  <section class="WORK" > 
+    <div class="BOXcontainer" id="work">
+        <a href="EN/Illustration.html" class="Portada" id="BOX1">ILLUSTRATION AND GRAPHIC</a>
+        <a href="EN/Animation.html" class="Portada" id="BOX2">VIDEO AND ANIMATION</a>
+        <a href="EN/Space.html" class="Portada" id="BOX3">3D AND SPACE</a>
+        <a href="EN/Interactive.html" class="Portada" id="BOX4">INTERACTIVE</a>
+        <a href="EN/Music.html" class="Portada" id="BOX5">MUSIC AND SOUND</a>
+        <a href="EN/All.html" class="Portada" id="BOX6">FROM A TO Z</a>
+    </div>
+
+    </section>
+    
+
+  </section>
+  <!-- ABOUT -->
+
+  <section class="about" id="aboutme">
+
+    <div class="about-img">
+        <img src="/img/imgHome/AboutMe.png" alt="">
+    </div>
+
+    <div class="about-content">
+        <h1>NICE TO MEET YOU, I'M CATA.</h1>
+        <p>I am Catalina Pastorino, an argentinian integral designer. While I can engage in many different type of design projects, I have a strong inclination towards narrative and concepts, 3D modelling and animation.
+            <br>            
+<br>Other of my skills and hobbys include illustration and music production, which I enjoy doing while designing!</p>
+
+        <!-- BOTON CV -->
+        <div class="buttons">
+            <a target="_blank" href="https://www.behance.net/gallery/192761033/DESIGN-PORTFOLIO" class="btn">PORTFOLIO</a>
+            <a href="/PDF/CV_Pastorino_EN.pdf" class="btn" title="Pastorino CV" download="">DOWNLOAD CV</a>
+        </div>
+        
+    </div>
+
+
+  </section>
+
+   <!-- CONTACT -->
+   <section class="contact" id="contact">
+
+    <div class="contact-content">
+        <h1>LET'S STAY IN TOUCH!</h1>
+        <p>¿Want to work together? Leave me a message or  follow me on social media! <br> </p>
+        <div class="mail">
+            <h5>CONTACT INFORMATION:</h5>
+            <a class="btn2"><i class='bx bx-envelope' ></i> catu.pastorino@gmail.com</a>
+            <a class="btn2"><i class='bx bx-phone' ></i> +54 911 5771 4048</a>
+        </div>
+    
+        <!-- ICONOS SOCIALES -->
+        <div class="socialicons">
+            <h5>SOCIAL MEDIA:</h5>
+            <a target="_blank" href="https://www.instagram.com/catistica?igsh=MTk2MjNpanAxbGFxdQ%3D%3D&utm_source=qr"><i class='bx bxl-instagram' ></i></a>
+            <a target="_blank" href="https://www.behance.net/catalinpastori1"><i class='bx bxl-behance' ></i></a>
+            <a target="_blank" href="https://www.youtube.com/@catistica"><i class='bx bxl-youtube' ></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/catalina-pastorino-9a1903190/"><i class='bx bxl-linkedin-square' ></i></a>
+        </div>
+
+    </div>
+
+    <div class="contact-form">
+        <form action="https://formsubmit.co/naminu.studio@gmail.com" method="POST">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Name">
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="subject" name="subject" placeholder="Subject">
+                <textarea name="Message" cols="30" rows="10" placeholder="Message"></textarea>
+                <input type="submit" value="Send Message" class="btn3">
+            </div> 
+        </form>
+
+    </div>
+    
+    
+   </section>
+
+   <footer class="footer">
+    <h2>2024 | Catalina Pastorino</h2>
+
+    <div class="TOP">
+        <a href="#"><i class='bx bx-up-arrow-alt' ></i></a>
+        <a id="text" href="#">GO TO TOP</a>
+        
+
+    </div>
+   
+   </footer>
+
+   <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-150px";
+    }
+
+   </script>
+</body>
+</html>

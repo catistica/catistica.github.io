@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>catistica</title>
+        <link rel="stylesheet" href="/EN/Proyectos/Fijos/fijos.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Koulen&display=swap');
+            @font-face{
+                font-family: Staatliches;
+                src:"font/font/Staatliches-Regular.ttf";
+            }
+            </style>
+    
+    </head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="/index.html" class="logo">  
+            <img src="/img/imgHome/Logo.png" alt="">
+        </a>
+        <!-- Menú -->
+        <nav class="menu" id="sidemenu"> 
+            <a href="/index.html" >HOME</a>
+            <a href="/index.html#transition">Work</a>
+            <a href="/index.html#aboutme">About Me</a>
+            <a href="/index.html#contact">Contact</a>
+            <a href="/ES/Proyectos/Fijos/Ritualia/Ritualia.html" id="language">ES</a>
+            <a href="#home" id="language" class="active">EN</a>
+
+            <i class='bx bx-chevron-right' id="hamburguesa" onclick="closemenu()"></i>
+        </nav>
+
+        <i class='bx bx-menu' id="hamburguesa" onclick="openmenu()"></i>
+        
+    </header>
+
+    <button onclick="history.back()" class="flecha"> 
+       <i class='bx bx-arrow-back'></i>
+    </button>
+
+    <div class="flecha" onclick="history.back()">
+    </div>
+
+    <section class="cuerpo">
+        <div class="imagen">
+            <img src="/EN/Proyectos/Fijos/Ritualia/img/Captura de Pantalla 2024-04-03 a la(s) 14.49.47.png" alt="">
+        </div>
+
+        <div class="texto">
+            
+            <div class="tags">
+                <h3 id="illustration">ILLUSTRATION AND GRAPHIC</h3>
+            </div>
+
+            <h1>RITUALIA</h1>
+            <p>In collaboration with MARA JIMENEZ and VALENTINO DATO. </p>
+            <p>Ritualia is a university practice of a branding project for based on a selection of objects of the Museo Moderno of Buenos Aires.</p>
+            <p>Based on a concept revolving dark-magic and mysticism, we designed Ritualias identity, from the logotype and key visuals to the museum display and spatial arrangement. The selected objects helped with the gothic and dark-magic aesthetic.</p>
+
+            <a class="btn3" target="_blank" href="https://drive.google.com/file/d/1nWXL5usBrqXDLQps10fYLpCVnD9mc8jk/view?usp=sharing">SEE THE PROJECT HERE</a>
+        </div>
+        
+    </section>
+
+
+    <footer class="footer">
+        <h2>2024 | Catalina Pastorino</h2>
+       </footer>
+
+    <script src="/EN/slider.js"></script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-150px";
+        }
+    
+       </script>
+    
+</body>
+</html>
